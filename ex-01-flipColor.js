@@ -11,16 +11,16 @@
 // OUTPUT: change object color
 // LOGIC:  if statement
 
-var flipColor = (obj) {
+var flipColor = function (obj) {
   // console.log(tile);
 
   if (obj.color === 'blue') {
     obj.color = 'red';
-    }
-  if else (obj.color === 'red') {
+  }
+  else {
     obj.color = 'blue';
-    }
-  return = obj
+  }
+  return obj
 }
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~

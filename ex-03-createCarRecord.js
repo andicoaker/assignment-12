@@ -14,12 +14,15 @@
 //   (see assertions 3 - 4) to make sure that
 //
 
+// INPUT: 4 string arguments
+// OUTPUT: new object
+//
+var createCarRecord = function(){
 
 
 
 
-
-
+}
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
