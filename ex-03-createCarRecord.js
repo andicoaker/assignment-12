@@ -14,14 +14,41 @@
 //   (see assertions 3 - 4) to make sure that
 //
 
-// INPUT: 4 string arguments
+// INPUT: 4 arguments - string, string, number, string
 // OUTPUT: new object
 //
-var createCarRecord = function(){
+var createCarRecord = function(makeValue, modelValue, yearValue, licenseValue){
 
+  var carRecordObj = {}
 
+  carRecordObj = {
+    make: makeValue,
+    model: modelValue,
+    year: yearValue,
+    license: licenseValue,
+  }
+  //  console.log(carRecordObj);
 
+  if (!makeValue || !modelValue || !yearValue || !licenseValue) {
+    // console.log('what is up?');
+    return "new record must have make, model, year, and license values";
+  }
 
+  if (typeof makeValue !== 'string'  || typeof modelValue !== 'string' || typeof licenseValue !== 'string') {
+    // console.log('what is up?');
+    return "1st, 2nd, and 4th arguments must be String";
+  }
+
+  if (typeof yearValue !== 'number') {
+    // console.log('what is up?');
+    return "3rd argument must be a Number";
+  }
+
+  // else {
+  //   return carRecordObj;
+  // }
+
+   return carRecordObj
 }
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
