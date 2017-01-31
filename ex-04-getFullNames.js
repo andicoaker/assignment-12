@@ -4,13 +4,26 @@
 // of objects with first and last names and returns an array
 // of strings, where each string is a customer's full name.
 
+//
+// INPUT: array of objects
+// OUTPUT: array of strings - customers full name
+
+var getFullNames = function (inputArrOfObj){
+  var outputArrofStr = [];
 
 
+    for(var i = 0 ; i < inputArrOfObj.length ; i += 1 ){
 
+      var nameObj = inputArrOfObj[i]
+      outputArrofStr.push( nameObj.first + " " + nameObj.last);
 
+    console.log(nameObj);
 
+    }
 
-
+    console.log(outputArrofStr);
+  return outputArrofStr
+}
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
