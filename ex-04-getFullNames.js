@@ -11,17 +11,14 @@
 var getFullNames = function (inputArrOfObj){
   var outputArrofStr = [];
 
-
     for(var i = 0 ; i < inputArrOfObj.length ; i += 1 ){
 
       var nameObj = inputArrOfObj[i]
       outputArrofStr.push( nameObj.first + " " + nameObj.last);
 
-    console.log(nameObj);
-
+    // console.log(nameObj);
     }
-
-    console.log(outputArrofStr);
+    // console.log(outputArrofStr);
   return outputArrofStr
 }
 
